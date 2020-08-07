@@ -56,7 +56,7 @@ def match_ends(words):
 
 def front_x(words):
     # your code here
-    x_strings = [x for x in words if x[0] =='x']
+    x_strings = [x for x in words if x[0] == 'x']
     other_strings = [x for x in words if x[0] != 'x']
     x_strings.sort()
     other_strings.sort()

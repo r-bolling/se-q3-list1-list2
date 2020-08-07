@@ -5,7 +5,7 @@ Kenzie assignment: List1
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "???"
+__author__ = "Robert Bolling with help from Kenzie lessons"
 
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
@@ -23,11 +23,20 @@ __author__ = "???"
 # strings where the string length is 2 or more and the first
 # and last chars of the string are the same.
 # Note: python does not have a ++ operator, but += works.
+# for loop over string length
+# if string length is 2 or more
+# AND first and last chars are same
+# increase count variable
+# return count
 
 
 def match_ends(words):
     # your code here
-    return
+    count = 0
+    for i in words:
+        if len(i) >= 2 and i[0] == i[-1]:
+            count += 1
+    return count
 
 
 # B. front_x

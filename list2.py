@@ -5,7 +5,7 @@ Kenzie assignment: List2
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "???"
+__author__ = "Robert Bolling with help from Kenzie lessons"
 
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
@@ -25,11 +25,22 @@ __author__ = "???"
 #   [1, 2, 2, 3] -> [1, 2, 3]
 # You may create a new list or modify the passed in list.
 # Hint: Don't use set()
+# loop over nums
+# if counter == 0 or if num[i] != num[i - 1] append to new var
+# return new var
 
 
 def remove_adjacent(nums):
     # your code here
-    return
+    new_nums = []
+    i = 0
+    while i < len(nums):
+        if i == 0:
+            new_nums.append(nums[i])
+        elif nums[i] != nums[i - 1]:
+            new_nums.append(nums[i])
+        i += 1
+    return new_nums
 
 
 # E. zip_merge

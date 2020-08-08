@@ -98,7 +98,24 @@ def empty_filter(list1):
 
 def linear_merge(list1, list2):
     # your code here
-    return
+    lists_length = len(list1) + len(list2)
+    new_list = []
+    i = 0
+    while i < lists_length:
+        if list1 == []:
+            new_list.append(list2[0])
+            list2.pop(0)
+        elif list2 == []:
+            new_list.append(list1[0])
+            list1.pop(0)
+        elif list1[0] < list2[0] or list2 == []:
+            new_list.append(list1[0])
+            list1.pop(0)
+        else:
+            new_list.append(list2[0])
+            list2.pop(0)
+        i += 1
+    return new_list
 
 
 # Provided simple test() function used in main() to print

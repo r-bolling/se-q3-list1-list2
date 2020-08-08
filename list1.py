@@ -5,7 +5,7 @@ Kenzie assignment: List1
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "Robert Bolling with help from Kenzie lessons"
+__author__ = "r-bolling with help from Kenzie lessons"
 
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0

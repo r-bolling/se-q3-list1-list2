@@ -53,7 +53,7 @@ def remove_adjacent(nums):
 # a built-in function in python that will do this?
 # Create new list var and new element var
 # loop over list 1
-# add list1[i] and list[2] to new element var
+# add list1[i] and list2[i] to new element var
 # append new element var to new list var
 # return new list
 
@@ -81,7 +81,8 @@ def zip_merge(list1, list2):
 
 def empty_filter(list1):
     # your code here
-    return
+    new_list = [x for x in list1 if x is not None and len(x) > 0]
+    return new_list
 
 
 # G. linear_merge

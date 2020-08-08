@@ -51,11 +51,23 @@ def remove_adjacent(nums):
 # result = ['My', 'name', 'is', 'Kelly']
 # Hint: Think of it as "zipping" two lists together.  Is there
 # a built-in function in python that will do this?
+# Create new list var and new element var
+# loop over list 1
+# add list1[i] and list[2] to new element var
+# append new element var to new list var
+# return new list
 
 
 def zip_merge(list1, list2):
     # your code here
-    return
+    new_element = ''
+    new_list = []
+    i = 0
+    while i < len(list1):
+        new_element = list1[i] + list2[i]
+        new_list.append(new_element)
+        i += 1
+    return new_list
 
 
 # F. empty_filter
